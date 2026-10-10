@@ -1,0 +1,28 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-10-10T00:00:00Z",
+  "title": "Design System: Modernization Mapper",
+  "extensions": {
+    "colorMeta": {
+      "indigo": {"role":"primary","displayName":"Enterprise Indigo","canonical":"#4f46e5","tonalRamp":["#17133e","#24206d","#3730a3","#4f46e5","#7772ef","#a5a2f5","#d0cffb","#eeeeff"]},
+      "violet": {"role":"secondary","displayName":"Strategic Violet","canonical":"#7c3aed","tonalRamp":["#251142","#45207a","#5b21b6","#7c3aed","#9b6af2","#bea2f7","#dfd2fb","#f4efff"]},
+      "canvas": {"role":"neutral","displayName":"Cool Canvas","canonical":"#f8fafc","tonalRamp":["#0f172a","#263247","#475569","#718096","#9aa7b8","#c5ceda","#e2e8f0","#f8fafc"]}
+    },
+    "typographyMeta": {"display":{"displayName":"Enterprise Display","purpose":"Product proposition and major sections."},"body":{"displayName":"Operating Sans","purpose":"All controls, tables, metrics, and support copy."}},
+    "shadows": [{"name":"cool-panel","value":"0 18px 40px -24px rgba(79,70,229,.34), 0 8px 18px -14px rgba(15,23,42,.14)","purpose":"Ambient elevation for strategic working surfaces."}],
+    "motion": [{"name":"refined-state","value":"180ms ease-out","purpose":"Fast hover and focus feedback."}],
+    "breakpoints": [{"name":"stack","value":"850px"},{"name":"cards","value":"600px"}]
+  },
+  "components": [
+    {"name":"Primary Button","kind":"button","refersTo":"button-primary","description":"High-confidence indigo action.","html":"<button class=\"ds-primary\">ADD APPLICATION</button>","css":".ds-primary{min-height:44px;padding:10px 17px;border:0;border-radius:10px;background:linear-gradient(135deg,#4f46e5,#7c3aed);color:#fff;font:800 15px 'Plus Jakarta Sans',sans-serif;transition:.18s ease-out}.ds-primary:hover{transform:translateY(-1px);box-shadow:0 12px 24px -8px rgba(79,70,229,.74)}.ds-primary:focus-visible{outline:3px solid #6366f1;outline-offset:3px}"},
+    {"name":"Recommendation Tag","kind":"chip","description":"Text-backed semantic recommendation.","html":"<span class=\"ds-tag\">REPLACE</span>","css":".ds-tag{display:inline-block;padding:4px 9px;border-radius:999px;background:#fef3c7;color:#92400e;font:800 12px 'Plus Jakarta Sans',sans-serif}"}
+  ],
+  "narrative": {
+    "northStar": "The Executive Control Plane",
+    "overview": "A cool, precise, enterprise-ready operating surface with restrained dimensional moments.",
+    "keyCharacteristics": ["Cool slate canvas","Indigo-violet actions","Precise card geometry","Crisp data visualization"],
+    "rules": [{"name":"The Strategic Color Rule","body":"Accent color explains action or recommendation.","section":"colors"}],
+    "dos": ["Do keep every application marker inside the four-quadrant matrix."],
+    "donts": ["Don't add editorial serif typography or organic silhouettes."]
+  }
+}
